@@ -36,6 +36,32 @@
 <div>
   <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{ .Content }}
+    <ul>
+      <li>Thoughts: {{ range $index, $thought:= site.Params.thoughts }}
+        {{ if ne $thought.link "" }}
+        <a href="{{ $thought.link }}" target="_blank">{{ $thought.display }}</a>{{ if ne (add $index 1) (len site.Params.thoughts) }}{{ ", " }}{{ end }}
+      {{ end }}
+      {{ end }}
+      </li>
+      
+      <li>Articles: {{ range $index, $article:= site.Params.articles }}
+        {{ if ne $article.link "" }}
+        <a href="{{ $article.link }}" target="_blank">{{ $article.display }}</a>{{ if ne (add $index 1) (len site.Params.articles) }}{{ ", " }}{{ end }}
+        {{ end }}
+        {{ end }}
+      </li>
+
+      <li>Projects: <a href="https://github.com/qutang" target="_blank">full list</a>
+        <ul>
+          {{ range $index, $project:= site.Params.projects }}
+          {{ if ne $project.link "" }}
+        <li><a href="{{ $project.link }}" target="_blank">{{ $project.display }}</a>{{ if ne $project.attention "hidden" }}<sup class="mb-2 ml-px inline-block font-medium uppercase tracking-wider text-[#ff3b2d] opacity-70">
+          {{ $project.attention }}</sup>{{ end }}: {{ $project.desc }}</li>
+        {{ end }}
+        {{ end }}
+        </ul>
+      </li>
+    </ul>
 </div>
 
 {{ end }}

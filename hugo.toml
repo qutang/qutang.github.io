@@ -35,6 +35,41 @@ location = 'Shanghai, China'
 bio = 'Research scientist & Computer engineer'
 interest = 'wearables, AI, health science, IoT and open source'
 
+# home page list
+[[params.thoughts]]
+display = "@nakeyixi"
+link = "https://x.com/nakeyixi"
+
+[[params.thoughts]]
+display = "知乎"
+link = 'https://www.zhihu.com/people/crispyribs'
+
+
+[[params.articles]]
+display = "少数派"
+link = ""
+
+[[params.articles]]
+display = "Medium"
+link = ""
+
+[[params.articles]]
+display = "old archives"
+link = "https://mzzgqnxhck.feishu.cn/docx/PuBEdPibIo5xpmxbGO0clLZgnce"
+
+
+[[params.projects]]
+display = "MIMSUnit"
+link = "https://mhealthgroup.github.io/MIMSunit/"
+attention = "featured"
+desc = "harmonizing movement computing of accelerometer data from different devices"
+
+[[params.projects]]
+display = "Aligner"
+link = ""
+attention = "new"
+desc = "R&D tool to browse, align, and annotate multiple multi-channel sensor signals"
+
 
 # misc
 disableHLJS = true           # disable highlight.js
