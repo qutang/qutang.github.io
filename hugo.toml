@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://qutang.github.io'
 languageCode = 'en-us'
 title = 'Qu.T'
 theme = 'paper_q'
