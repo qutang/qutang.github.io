@@ -1,0 +1,76 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Qu.T'
+theme = 'paper_q'
+copyright = "Copyright © 2023, Qu Tang; all right reserved."
+paginate = 6
+enableInlineShortcodes = true
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 10
+
+[params]
+# color style
+color = 'linen' # linen, wheat, gray, light
+
+# header social icons
+twitter = 'nakeyixi' # twitter.com/YOUR_TWITTER_ID
+github = 'qutang'    # github.com/YOUR_GITHUB_ID
+linkedin = 'qutang'  # linkedin.com/in/YOUR_LINKEDIN_ID
+
+# home page profile
+avatar = 'qu.tang@outlook.com'
+name = 'Qu.T'
+location = 'Shanghai, China'
+bio = 'Research scientist & Computer engineer'
+interest = 'wearables, AI, health science, IoT and open source'
+
+
+# misc
+disableHLJS = true           # disable highlight.js
+disablePostNavigation = true # disable post navigation
+monoDarkIcon = false         # show monochrome dark mode icon
+# gravatarCdn = 'GRAVATAR_CDN_LINK' # e.g. 'https://cdn.v2ex.com/gravatar/'
+math = true # enable KaTeX math typesetting globally
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services]
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
