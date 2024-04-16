@@ -8,15 +8,14 @@ Business via:
 
 What I offer:
 
-* Consulting
-  * Data visualization and statistical analysis
-  * Machine learning and AI prototyping
+* Consulting or outsourcing
+  * Data visualization and data analysis
+  * Machine learning and AI project prototyping
   * Research study planning
 
 * Partnership
   * AI and machine learning research
-  * Wearable and IoT development
-  * Health or sport science related R&D
+  * Wearable and IoT algorithms R&D
 
 {{< css.inline >}}
 

@@ -8,10 +8,10 @@
 <div class="mt-16 mb-16 flex items-center">
   {{ if $avatar_url }}
   <div
-    class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]"
+    class="mr-5 rounded-full border-[0.5px] border-black/10 bg-white/50 shadow dark:bg-white/[15%]"
   >
     <img
-      class="my-0 aspect-square w-16 rounded-full !bg-black/5 dark:!bg-black/80"
+      class="my-0 aspect-square w-20 rounded-full !bg-black/5 dark:!bg-black/80"
       src="{{ $avatar_url }}"
       alt="{{ site.Params.name | default site.Title }}"
     />
@@ -37,21 +37,21 @@
   <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
     {{ .Content }}
     <ul>
-      <li>Thoughts: {{ range $index, $thought:= site.Params.thoughts }}
+      <li>🤔Thoughts: {{ range $index, $thought:= site.Params.thoughts }}
         {{ if ne $thought.link "" }}
         <a href="{{ $thought.link }}" target="_blank">{{ $thought.display }}</a>{{ if ne (add $index 1) (len site.Params.thoughts) }}{{ ", " }}{{ end }}
       {{ end }}
       {{ end }}
       </li>
       
-      <li>Articles: {{ range $index, $article:= site.Params.articles }}
+      <li>📑Articles: {{ range $index, $article:= site.Params.articles }}
         {{ if ne $article.link "" }}
         <a href="{{ $article.link }}" target="_blank">{{ $article.display }}</a>{{ if ne (add $index 1) (len site.Params.articles) }}{{ ", " }}{{ end }}
         {{ end }}
         {{ end }}
       </li>
 
-      <li>Projects: <a href="https://github.com/qutang" target="_blank">full list</a>
+      <li>🧮Projects: <a href="https://github.com/qutang" target="_blank">full list</a>
         <ul>
           {{ range $index, $project:= site.Params.projects }}
           {{ if ne $project.link "" }}

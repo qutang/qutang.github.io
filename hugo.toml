@@ -31,9 +31,9 @@ linkedin = 'qutang'  # linkedin.com/in/YOUR_LINKEDIN_ID
 # home page profile
 avatar = 'qu.tang@outlook.com'
 name = 'Qu.T'
-location = 'Shanghai, China'
+location = '🏢Shanghai, China'
 bio = 'Research scientist & Computer engineer'
-interest = 'wearables, AI, health science, IoT and open source'
+interest = 'wearables, AI, sports science, IoT and open source'
 
 # home page list
 [[params.thoughts]]
@@ -67,7 +67,7 @@ desc = "harmonizing movement computing of accelerometer data from different devi
 [[params.projects]]
 display = "Aligner"
 link = ""
-attention = "new"
+attention = "alpha"
 desc = "R&D tool to browse, align, and annotate multiple multi-channel sensor signals"
 
 
