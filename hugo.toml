@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Qu.T'
 theme = 'paper_q'
 copyright = "Copyright © 2023, Qu Tang; all right reserved."
-paginate = 6
+pagination.paperSize = 6
 enableInlineShortcodes = true
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
@@ -24,9 +24,8 @@ weight = 10
 color = 'linen' # linen, wheat, gray, light
 
 # header social icons
-twitter = 'nakeyixi' # twitter.com/YOUR_TWITTER_ID
-github = 'qutang'    # github.com/YOUR_GITHUB_ID
-linkedin = 'qutang'  # linkedin.com/in/YOUR_LINKEDIN_ID
+github = 'qutang'   # github.com/YOUR_GITHUB_ID
+linkedin = 'qutang' # linkedin.com/in/YOUR_LINKEDIN_ID
 
 # home page profile
 avatar = 'qu.tang@outlook.com'
@@ -36,10 +35,6 @@ bio = 'Research scientist & Computer engineer'
 interest = 'wearables, AI, sports science, IoT and open source'
 
 # home page list
-[[params.thoughts]]
-display = "@nakeyixi"
-link = "https://x.com/nakeyixi"
-
 [[params.thoughts]]
 display = "知乎"
 link = 'https://www.zhihu.com/people/crispyribs'
